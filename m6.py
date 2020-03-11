@@ -4,7 +4,7 @@ import pickle
 HEADERSIZE=10
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect((socket.gethostname(),1234))
+s.connect((socket.gethostname(),1236))
 
 full_msg = b''
 new_msg = True
@@ -19,5 +19,5 @@ while True:
     if len(full_msg)-HEADERSIZE == msglen:
         array=(pickle.loads(full_msg[HEADERSIZE:]))
         break
-print(array)
+
 s.send(bytes(str(sum(array)),"utf-8"))
