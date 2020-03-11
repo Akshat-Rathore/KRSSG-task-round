@@ -9,9 +9,9 @@ arr.append((input("Enter the Number of Minions you want to connect: ")))
 msg=pickle.dumps(arr)
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect((socket.gethostname(),1238))
+s.connect((socket.gethostname(),1234))
 
-print("")
+
 msg=bytes(f"{len(msg):<{HEADERSIZE}}","utf-8") + msg
 s.send(msg)
 
