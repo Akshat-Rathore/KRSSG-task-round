@@ -24,7 +24,7 @@ def sumit(clientsocket,tosum):
     return num
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.bind((socket.gethostname(),1238))
+s.bind((socket.gethostname(),1234))
 s.listen(1)
 
 clientocket,address=s.accept()
@@ -47,7 +47,7 @@ while True:
 mini=array.pop()
 
 s1=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s1.bind((socket.gethostname(),1234))
+s1.bind((socket.gethostname(),1236))
 s1.listen(int(mini)+1)
 
 sum1=0
