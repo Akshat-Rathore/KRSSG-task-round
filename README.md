@@ -20,3 +20,5 @@ TASK_4_Obs.odt- Compilation for Observation for task 4
 
 Files for task 5:
 Task_5_zipped.zip:zipped folder contaning scripts and other utilitis for attacker and defender
+Stategy_Attacker.cc,Stategy_Defender.cc-basic stategies for attacker and Defender
+
